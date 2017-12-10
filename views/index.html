@@ -1,0 +1,165 @@
+{% set title = 'Register your preferences for sharing health data' %}
+{% block scripts %}
+
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <p>Homepage for G series {{title}} prototypes.</p>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <div class="callout callout--attention">
+          <h2>Stable</h2>
+          <h3>
+            <a title="Prototype G Summary Page - {{ title }}" href="/G/index">Prototype G</a>
+          </h3>
+          <p>
+            Landing page for Prototype G series
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/G/01-overview">Start Prototype G</a></p>
+        </div>
+
+        <div class="callout callout">
+          <h2 class="h3">
+            <a title="Prototype G Summary Page - {{ title }}" href="/v0/index"> (v0) - Prototype G</a>
+          </h2>
+          <p>
+            Landing page. Frozen version of G for landing page testing. Reduced number of pages and streamlined content.
+          </p>
+          <p>
+            No full journey.
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/v0/01-overview">Start Alternative v0</a></p>
+        </div>
+
+        <div class="callout callout">
+          <h2 class="h3">
+            <a title="Prototype G Summary Page - {{ title }}" href="/v1/index"> (v1) - Prototype G</a>
+          </h2>
+          <p>
+            Landing page for v1. Removes blue header but keeps multi-page layout.
+          </p>
+          <p>
+            No full journey.
+          </p>
+          <p>
+            <a title="Start Prototype G - {{ title }}" role="button" class="button" href="/v1/01-overview">Start Alternative v1</a>
+          </p>
+        </div>
+
+        <div class="callout callout">
+          <h2 class="h3">
+            <a title="Prototype G Summary Page - {{ title }}" href="/v2/index">(v2) - Prototype G</a>
+          </h2>
+          <p>
+            Landing page for v2. Provides users with a landing page that summarizes content in blocks.
+          </p>
+          <p>
+            Leverages icons to provide contextual information and draw the user to read the associated content.
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/v2/01-overview">Start Alternative v2</a></p>
+        </div>
+
+        <div class="callout callout">
+          <h2 class="h3">
+            <a title="Prototype G Summary Page - {{ title }}" href="/v3/index">(v3) - Prototype G</a>
+          </h2>
+          <p>
+            Landing page for v3. Provides users with a streamlined, quickly scannable landing page.
+          </p>
+          <p>
+            Leverages icons to summarise content for users. Provides users with an understanding of the opt-out process
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/v3/01-overview">Start Alternative v3</a></p>
+        </div>
+
+        <div class="callout callout">
+          <h2 class="h3">
+            <a title="Prototype G Summary Page - {{ title }}" href="/v4/index">(v4) - Prototype G</a>
+          </h2>
+          <p>
+            Landing page for v4. Based on v1. Removes the links from the blue box and places them in a sidebar.
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/v4/01-overview">Start Alternative v4</a></p>
+        </div>
+
+
+        <div class="callout callout--error">
+          <h2>Depreciated</h2>
+
+          <h3>
+            <a title="Prototype G Summary Page - {{ title }}" href="/vX/index">(vX) - Prototype G</a>
+          </h3>
+          <p>
+            Landing page for vX. Previous version before G. Seven page structure.
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/vX/01-overview">Start Alternative vX</a></p>
+
+          <h3>
+            <a title="Prototype G Summary Page - {{ title }}" href="/GX/index">Prototype G-X</a>
+          </h3>
+          <p>
+            Two question version of the landing page for Prototype G series
+          </p>
+          <p><a title="Start Prototype G - {{ title }}" role="button" class="button" href="/GX/01-overview">Start Prototype G-X</a></p>
+        </div>
+      </div>
+
+      <div class="column--one-third">
+        <div class="callout callout--muted">
+
+          <h2 class="h3">Latest Stable</h2>
+          <p>
+            <a title="Prototype G - {{title}}" href="https://ndop-f.herokuapp.com/stable/">Prototype G</a>
+          </p>
+
+          <h2 class="h3">Recent Prototypes</h2>
+          <ul class="link-list">
+            <li>
+              <a title="Prototype G - {{title}}" href="/v3/">Prototype G - Alternative landing page II</a>
+            </li>
+            <li>
+              <a title="Prototype G - {{title}}" href="/v2/">Prototype G - Alternative landing page I</a>
+            </li>
+
+            <li>
+              <a title="Prototype G - {{title}}" href="/g/">Prototype G</a>
+            </li>
+            <li>
+              <a title="Prototype F Stable - {{title}}" href="https://ndop-f.herokuapp.com/stable/">Prototype F Stable</a>
+            </li>
+            <li>
+              <a title="Prototype one-question - {{title}}" href="https://ndop-f.herokuapp.com/one-question/">Prototype one-question</a>
+            </li>
+            <li>
+              <a title="Prototype F Toggle - {{title}}" href="https://ndop-f.herokuapp.com/f-toggle/">Prototype F Toggle</a>
+            </li>
+            <li>
+              <a title="Prototype F BIT - {{title}}" href="https://ndop-f.herokuapp.com/bit/">Prototype bit</a>
+            </li>
+            <li><a title="Prototype F - {{title}}" href="https://ndop-f.herokuapp.com/F">Prototype F</a></li>
+            <li>
+              <a title="Prototype D - {{title}}" href="http://ndop.herokuapp.com/app/prototypes/prototype-d/index.html">Prototype D</a>
+            </li>
+            <li>
+              <a title="Prototype E - {{title}}" href="http://ndop.herokuapp.com/app/prototypes/lab-5-changes/index.html">Prototype E</a>
+            </li>
+            <li><a title="Previous prototypes" href="http://ndop.herokuapp.com/index.html">Previous prototypes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</main>
+{% endblock %}
