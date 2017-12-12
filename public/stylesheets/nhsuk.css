@@ -1160,7 +1160,8 @@ table {
 .global-footer {
   background-color: #005eb8;
   border-top: 4px solid #003087;
-  color: #fff; }
+  color: #fff;
+  margin-top: 32px; }
   .global-footer * {
     font-family: "Frutiger W01", Arial, sans-serif;
     font-size: 16px;

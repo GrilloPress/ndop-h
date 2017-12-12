@@ -5,6 +5,7 @@
   background-color: $nhs-blue;
   border-top: $baseline-grid-unit solid $dark-blue;
   color: $white;
+  margin-top: 32px;
 
   * {
     @include core-font(16);
