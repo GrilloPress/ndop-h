@@ -6,27 +6,16 @@
 {% extends 'layouts/layout.html' %}
 {% block body %}
 <main id="content" role="main">
-  <div class="page-section">
-
-    <nav aria-label="Breadcrumb">
-      <ol class="list--breadcrumb">
-        <li><a href="/{{PROTOTYPE_URL}}/">NHS.UK</a></li>
-        <li><a href="/{{PROTOTYPE_URL}}/app/index">Register your preference</a></li>
-        <li>{{title}}</li>
-      </ol>
-    </nav>
-
-    <div class="local-header">
-      <h1 class="local-header__title">{{title}}</h1>
-      <div class="local-header__intro">
-        <div class="reading-width">
-          <p>Step 3 of 5</p>
-        </div>
-      </div>
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preferences for sharing health data</a>
     </div>
   </div>
+
   <div class="page-section">
     <div class="reading-width">
+      <h1 class="page-title">{{title}}</h1>
+      <p>Step 3 of 5</p>
       <div class="grid-row">
         <div class="column--three-quarters">
             <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">
