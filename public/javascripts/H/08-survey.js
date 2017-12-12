@@ -1,3 +1,4 @@
+var PROTOTYPE_URL = "/H";
 
 function survey(){
 

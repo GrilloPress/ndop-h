@@ -1,3 +1,5 @@
+var PROTOTYPE_URL = "/H";
+
 //Javascript to direct user to correct confirmation page based on their data sharing preferences
 // Check that form is filled out
 // Serve errors if not
@@ -25,9 +27,9 @@ function confirm() {
   var singlePref = sessionStorage.singlePref;
 
   if (singlePref == "true") {
-    window.location.href = '/G/app/06-confirm-your-choice';
+    window.location.href = PROTOTYPE_URL + '/app/06-confirm-your-choice';
   } else if (singlePref == "false") {
-    window.location.href = '/G/app/06-confirm-your-choice';
+    window.location.href = PROTOTYPE_URL + '/app/06-confirm-your-choice';
   } else {
     $(" .error-summary ").addClass(" error-message-active ").focus();
 

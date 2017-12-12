@@ -1,3 +1,4 @@
+var PROTOTYPE_URL = "/H";
 
     $(document).ready(function() {
       //Ensure checkbox is empty on page load
