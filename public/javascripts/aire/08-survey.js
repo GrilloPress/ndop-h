@@ -1,4 +1,4 @@
-var PROTOTYPE_URL = "/H";
+var PROTOTYPE_URL = "/aire";
 
 function survey(){
 

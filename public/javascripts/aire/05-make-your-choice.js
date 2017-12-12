@@ -1,4 +1,4 @@
-var PROTOTYPE_URL = "/H";
+var PROTOTYPE_URL = "/aire";
 
 //Javascript to direct user to correct confirmation page based on their data sharing preferences
 // Check that form is filled out

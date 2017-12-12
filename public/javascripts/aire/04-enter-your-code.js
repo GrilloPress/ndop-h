@@ -1,6 +1,6 @@
 //
 
-var PROTOTYPE_URL = "/H";
+var PROTOTYPE_URL = "/aire";
 
 var count = 0;
 

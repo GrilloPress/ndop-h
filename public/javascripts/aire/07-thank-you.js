@@ -3,4 +3,4 @@ $(window).load(function() {
   })
 });
 
-var PROTOTYPE_URL = "/H";
+var PROTOTYPE_URL = "/aire";
