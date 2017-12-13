@@ -3403,6 +3403,38 @@ input[type=range]:focus::-ms-fill-upper {
     width: 130px;
     margin-top: 8px; }
 
+.banner {
+  background-color: #f6a623;
+  color: #000;
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  font-weight: 400;
+  border-bottom: 2px dashed; }
+  @media (min-width: 641px) {
+    .banner {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media (min-width: 925px) {
+    .banner {
+      font-size: 16px;
+      line-height: 24px; } }
+  .banner.alpha span {
+    padding: 1px 5px;
+    color: #f6a623;
+    background-color: #000; }
+  .banner a {
+    color: black;
+    text-decoration: underline; }
+    .banner a:hover {
+      color: #f6a623;
+      padding: 1px 5px;
+      background-color: #000; }
+  .banner .page-section {
+    padding: 8px 0; }
+
 .local-header__subtitle {
   color: white;
   margin-top: 5px; }
