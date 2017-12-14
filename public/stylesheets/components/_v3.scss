@@ -112,24 +112,3 @@
 .process-three {
   color: $dark-blue;
 }
-
-/* Testing new column widths */
-.column--one-quarter-align-right {
-  text-align: right;
-  @include grid-column(1 / 4);
-}
-.column--three-quarters {
-  @include grid-column(3 / 4);
-}
-.column--one-fifth {
-  @include grid-column(1 / 5);
-}
-.column--one-sixth {
-  @include grid-column(1 / 6);
-}
-.column--one-seventh {
-  @include grid-column(1 / 7);
-}
-.column--one-eighth {
-  @include grid-column(1 / 8);
-}
