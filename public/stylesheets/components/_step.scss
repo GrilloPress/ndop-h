@@ -1,4 +1,50 @@
-// .step-container {}
+// EXAMPLE WITHOUT ICONS
+// <div class="step-container">
+//  <div id="step-check-your-details" class="step">
+//    <div class="grid-row">
+//      <div class="column--step-counter">
+//        <div>
+//          1
+//        </div>
+//      </div>
+//      <div class="column--step-body">
+//        <h3>Check your details</h3>
+//        <p>
+//          You enter your details and we look for your contact information in our patient database.
+//        </p>
+//        <p>
+//          The information you provide will not be saved.
+//        </p>
+//      </div>
+//    </div>
+//  </div>
+// </div>
+//
+// EXAMPLE WITH ICONS
+// <div class="step-container">
+//  <div id="step-check-your-details" class="step">
+//    <div class="grid-row">
+//      <div class="column--step-counter">
+//        <div>
+//          2
+//        </div>
+//      </div>
+//      <div class="column--step-body-with-icon">
+//        <h3>Check your details</h3>
+//        <p>
+//          You enter your details and we look for your contact information in our patient database.
+//        </p>
+//        <p>
+//          The information you provide will not be saved.
+//        </p>
+//      </div>
+//      <div class="column--step-counter">
+//        <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
+//      </div>
+//    </div>
+//
+//  </div>
+// </div>
 
 .step {
 
