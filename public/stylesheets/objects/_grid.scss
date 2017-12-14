@@ -61,17 +61,18 @@
   @include grid-column(3 / 4, $float: right);
 }
 
-/* Testing new column widths */
-.column--one-quarter-align-right {
-  text-align: right;
-  @include grid-column(1 / 4);
-}
-.column--three-quarters {
-  @include grid-column(3 / 4);
-}
 .column--one-fifth {
   @include grid-column(1 / 5);
 }
+.column--two-fifths {
+  @include grid-column(2 / 5);
+}
+.column--three-fifths {
+  @include grid-column(3 / 5);
+}
+
+
+
 .column--one-sixth {
   @include grid-column(1 / 6);
 }
