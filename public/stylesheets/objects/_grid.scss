@@ -70,12 +70,27 @@
 .column--three-fifths {
   @include grid-column(3 / 5);
 }
+.column--four-fifths {
+  @include grid-column(4 / 5);
+}
 
 
 
 .column--one-sixth {
   @include grid-column(1 / 6);
 }
+
+
+.column--four-sixes {
+  @include grid-column(4 / 6);
+}
+
+
+.column--five-sixes {
+  @include grid-column(5 / 6);
+}
+
+
 .column--one-seventh {
   @include grid-column(1 / 7);
 }

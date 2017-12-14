@@ -557,6 +557,78 @@ body {
       float: right;
       width: 75%; } }
 
+.column--one-fifth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-fifth {
+      float: left;
+      width: 20%; } }
+
+.column--two-fifths {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--two-fifths {
+      float: left;
+      width: 40%; } }
+
+.column--three-fifths {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--three-fifths {
+      float: left;
+      width: 60%; } }
+
+.column--four-fifths {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--four-fifths {
+      float: left;
+      width: 80%; } }
+
+.column--one-sixth, .step .column--step-counter, .step .column--step-icon {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-sixth, .step .column--step-counter, .step .column--step-icon {
+      float: left;
+      width: 16.66667%; } }
+
+.column--four-sixes, .step .column--step-body-with-icon {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--four-sixes, .step .column--step-body-with-icon {
+      float: left;
+      width: 66.66667%; } }
+
+.column--five-sixes, .step .column--step-body {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--five-sixes, .step .column--step-body {
+      float: left;
+      width: 83.33333%; } }
+
+.column--one-seventh {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-seventh {
+      float: left;
+      width: 14.28571%; } }
+
+.column--one-eighth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-eighth {
+      float: left;
+      width: 12.5%; } }
+
 .page-section {
   margin: 0 16px;
   max-width: 960px;
@@ -3279,56 +3351,6 @@ input[type=range]:focus::-ms-fill-upper {
 .process-three {
   color: #003087; }
 
-/* Testing new column widths */
-.column--one-quarter-align-right {
-  text-align: right;
-  display: block;
-  padding: 0 16px; }
-  @media (min-width: 925px) {
-    .column--one-quarter-align-right {
-      float: left;
-      width: 25%; } }
-
-.column--three-quarters {
-  display: block;
-  padding: 0 16px; }
-  @media (min-width: 925px) {
-    .column--three-quarters {
-      float: left;
-      width: 75%; } }
-
-.column--one-fifth {
-  display: block;
-  padding: 0 16px; }
-  @media (min-width: 925px) {
-    .column--one-fifth {
-      float: left;
-      width: 20%; } }
-
-.column--one-sixth {
-  display: block;
-  padding: 0 16px; }
-  @media (min-width: 925px) {
-    .column--one-sixth {
-      float: left;
-      width: 16.66667%; } }
-
-.column--one-seventh {
-  display: block;
-  padding: 0 16px; }
-  @media (min-width: 925px) {
-    .column--one-seventh {
-      float: left;
-      width: 14.28571%; } }
-
-.column--one-eighth {
-  display: block;
-  padding: 0 16px; }
-  @media (min-width: 925px) {
-    .column--one-eighth {
-      float: left;
-      width: 12.5%; } }
-
 .page-band {
   background-color: #005eb8;
   color: white;
@@ -3434,6 +3456,49 @@ input[type=range]:focus::-ms-fill-upper {
       background-color: #000; }
   .banner .page-section {
     padding: 8px 0; }
+
+@media (max-width: 640px) {
+  .step .column--step-counter {
+    float: left;
+    max-width: 24%; } }
+
+.step .column--step-counter div {
+  background: #005eb8;
+  color: #ffffff;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  margin: auto; }
+
+@media (max-width: 640px) {
+  .step .column--step-body {
+    float: left;
+    max-width: 75%; } }
+
+@media (min-width: 925px) {
+  .step .column--step-body h2, .step .column--step-body h3 {
+    margin-top: 18px; } }
+
+@media (max-width: 640px) {
+  .step .column--step-body-with-icon {
+    float: left;
+    max-width: 70%; } }
+
+@media (min-width: 925px) {
+  .step .column--step-body-with-icon h2, .step .column--step-body-with-icon h3 {
+    margin-top: 18px; } }
+
+@media (max-width: 640px) {
+  .step .column--step-icon {
+    float: left;
+    max-width: 70%;
+    padding-left: 26%; } }
+
+.step .column--step-icon img {
+  margin-top: 32px; }
 
 .local-header__subtitle {
   color: white;

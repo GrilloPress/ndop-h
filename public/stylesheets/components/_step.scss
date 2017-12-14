@@ -1,0 +1,92 @@
+// .step-container {}
+
+.step {
+
+  // one-fifth column that floats left on mobile
+  .column--step-counter {
+
+    @extend .column--one-sixth;
+
+    @include media(mobile) {
+
+      float: left;
+      max-width: 24%;
+    }
+
+    div {
+
+      background: $nhs-blue;
+      color: #ffffff;
+      font-size: 32px;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      margin: auto;
+
+    }
+  }
+
+  .column--step-body {
+
+    @extend .column--five-sixes;
+
+    @include media(mobile) {
+
+      float: left;
+      max-width: 75%;
+    }
+
+    h2, h3 {
+
+      @include media(desktop) {
+
+        margin-top: 18px;
+      }
+
+    }
+
+
+  }
+
+  .column--step-body-with-icon {
+
+    @extend .column--four-sixes;
+
+    @include media(mobile) {
+
+      float: left;
+      max-width: 70%;
+    }
+
+    h2, h3 {
+
+      @include media(desktop) {
+
+        margin-top: 18px;
+      }
+
+    }
+
+
+  }
+
+  .column--step-icon {
+
+    @extend .column--one-sixth;
+    @include media(mobile) {
+
+      float: left;
+      max-width: 70%;
+      padding-left: 26%;
+    }
+
+    img {
+
+      margin-top: 32px;
+    }
+
+  }
+
+}
