@@ -1,0 +1,72 @@
+{% set title = 'Confirm who you are' %}
+{% set PROTOTYPE_URL = 'aire' %}
+{% block scripts %}
+<script src="/javascripts/radio-checkbox.js"></script>
+<script src="/javascripts/{{PROTOTYPE_URL}}/01-confirm-who-you-are.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preferences for sharing health data</a>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+        <h1 class="page-title">{{title}}</h1>
+
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <div class="reading-width">
+                 <p>For security reasons we must verify who you are. Using your contact details we have in our records, we will send you a unique security passcode.</p>
+                 <p>
+                   To confirm we have the correct contact details for you, you will need to provide your:
+                 </p>
+                 <ul>
+                   <li>
+                     name
+                   </li>
+                   <li>
+                     date of birth
+                   </li>
+                   <li>
+                     NHS number
+                   </li>
+                 </ul>
+
+                   <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
+                     <h2 id="error-summary" class="h3">Sorry, to continue you must fix the following errors</h2>
+                     <ul class="link-list">
+                       <li>
+                         <a class="error-text" href="#incomplete-checkbox">Incomplete checkbox</a>
+                       </li>
+                     </ul>
+                   </div>
+
+                   <h2 class="h3">You must agree to the following statement by ticking the box</h2>
+                   <form id="form" action="/{{PROTOTYPE_URL}}/app/02-your-details">
+                     <div class="form-row">
+                       <div class="callout callout--warning checkbox-container">
+                         <div id="incomplete-checkbox" class="error error-message">
+                           <p class="error-text error-label error-label-checkbox">Please click the checkbox to allow us to verify your identity</p>
+                           <br />
+                         </div>
+                         <input type="checkbox" id="pds-confirm" class="multiple-choice--checkbox checkbox-blue" id="1">
+                         <label for="pds-confirm" class="" id="1">
+                           <span class="checkbox-long-text">I allow the NHS to use my contact details for verification</span>
+                         </label>
+                       </div>
+                     </div>
+                     <input class="button" type="submit" value="Continue">
+                  </form>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+</main>
+{% endblock %}

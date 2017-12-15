@@ -5,9 +5,9 @@ function confirm() {
   var nhsNumberPref = $('input[name="NHS-number-pref"]:checked').val();
 
   if (nhsNumberPref == "true") {
-    window.location.href = PROTOTYPE_URL + '/journey/02-NHS-number';
+    window.location.href = PROTOTYPE_URL + '/journey/03-verification-process';
   } else if (nhsNumberPref == "false") {
-    window.location.href = PROTOTYPE_URL + '/journey/01-B-registered-details';
+    window.location.href = PROTOTYPE_URL + '/journey/02-B-finding-your-NHS-number';
   } else {
     $(" .error-summary ").addClass(" error-message-active ").focus();
       $('#NHS-number-question-link').remove();
