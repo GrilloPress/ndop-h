@@ -46,6 +46,21 @@
 //  </div>
 // </div>
 
+.step-container {
+
+  padding: 1em 0;
+
+  &.grey {
+
+    background-color: #E8EDEE;
+  }
+
+  h2 {
+
+    margin: 0.5em 0 1.5em 0;
+  }
+}
+
 .step {
 
   // one-fifth column that floats left on mobile
@@ -93,6 +108,15 @@
 
     }
 
+    &.action {
+
+      @include media(desktop) {
+
+        margin-left: 16.66%;
+      }
+
+    }
+
 
   }
 
@@ -131,6 +155,95 @@
     img {
 
       margin-top: 32px;
+    }
+
+  }
+
+}
+
+
+.step-card-container {
+
+  padding: 0;
+
+  h2 {
+
+    margin: 0;
+    padding: 28px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    border-radius: 5px 5px 0 0;
+    font-size: 28px;
+
+  }
+
+  .step {
+
+    margin-top: 0px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    padding: 32px 16px;
+
+    &.last {
+
+      border-radius: 0 0 5px 5px;
+    }
+
+    .column--card-step-body-with-icon {
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 70%;
+      }
+
+      h2, h3 {
+
+        @include media(desktop) {
+
+          margin-top: 18px;
+        }
+
+      }
+      @extend .column--three-fifths;
+    }
+
+    .column--card-step-icon {
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 70%;
+        padding-left: 26%;
+      }
+
+      img {
+
+        margin-top: 32px;
+      }
+      @extend .column--one-fifth;
+    }
+
+    .column--card-step-counter {
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 24%;
+      }
+
+      div {
+
+        background: $nhs-blue;
+        color: #ffffff;
+        font-size: 32px;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        margin: auto;
+
+      }
+      @extend .column--one-sixth;
     }
 
   }

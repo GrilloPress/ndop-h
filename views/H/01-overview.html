@@ -1,12 +1,12 @@
 {% set title = 'Overview - Register your preferences for sharing health data' %}
 {% set content_title = "Overview" %}
-{% set PROTOTYPE_URL = 'H' %}
+{% set PROTOTYPE_URL = 'H'%}
 {% block scripts %}
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 
 {% block body %}
-<main id="content" class="v2" role="main">
+<main id="content" role="main">
   <div class="page-band">
     <div class="page-section">
       <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a>
@@ -44,176 +44,62 @@
       </div>
   </div>
 
-  <div class="marketing-section top">
-    <div class="page-section">
+<div class="page-section">
       <div class="reading-width">
-        <div class="grid-row">
-          <div class="column--one-half">
-            <p>
-              Whenever you visit an NHS service, care professionals must keep records about you. These may be electronic, paper or a mixture of both. Your records contain your health and care information.
-            </p>
-            <p>
-              You can use our online service to request that your personally identifiable data is not used or shared beyond your own individual care.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <p>
+                Whenever you visit an NHS service, care professionals must keep records about you. These may be electronic, paper or a mixture of both. Your records contain your health and care information.
+              </p>
+              <p>
+                The NHS may use this personally identifiable data in two different ways. The first reason for sharing is for your own individual care. This allows health and care professionals, like doctors and dentists, to see your important medical and care details.
+              </p>
+              <h2 class="h3" id="the-second-reason">The second reason</h2>
+              <p>
+                The second reason for sharing is to help the NHS research, plan and improve health and social care services for you and your family.
+              </p>
+              <p>
+                This helps the NHS:
+              </p>
+              <ul>
+                <li>
+                  plan essential facilities like heart units
+                </li>
+                <li>
+                  understand the need for specialist care wards
+                </li>
+                <li>
+                  research potential cures for life-threatening diseases
+                </li>
+                <li>
+                  improve treatment for serious illnesses
+                </li>
+              </ul>
+              <h2 class="h3" id="the-second-reason">Your preferences</h2>
+              <p>
+                By sharing your data you can contribute to the health of future generations. However, if you don't agree with using your data for research and/or planning purposes, you can opt-out of this.
+              </p>
 
-  <div class="marketing-section marketing-section-grey">
-    <div class="page-section">
-      <div class="reading-width">
-        <h2 id="how-data-is-kept-secure" class="h3">Who uses your data</h2>
-        <hr />
-        <div class="grid-row">
-          <div class="column--one-half">
-            <p>
-              The NHS collects health and care data from a wide variety of NHS trusts, local authorities and independent sector groups.
-            </p>
-            <p>
-              Research bodies and organisations can request access to this data.
-            </p>
-            <p>
-              They must meet strict conditions and criteria in order to be considered.
-            </p>
-            <p>
-              Third party marketing or insurance companies will not be given access to your data, unless you specifically request us to do so.
-            </p>
-          </div>
-          <div class="column--one-half">
-            <div class="" align="center">
-              <img class="image-marketing desktop" src="/images/nodes.png" width="400" alt="" />
+              <p>
+                The decision you make will not affect your individual care.
+              </p>
+              <p>
+                <a title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/app/index">Register your preference</a> or continue reading for more information.
+              </p>
             </div>
           </div>
-        </div>
-        <a role="button" class="button-wire" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Find out more</a>
+      </div>
+</div>
+
+<div class="page-section">
+  <div class="reading-width">
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        {{ patterns.page_nav( "", "", "Who uses your data", "/" + PROTOTYPE_URL + "/02-who-uses-your-data" ) }}
       </div>
     </div>
   </div>
-
-  <div class="marketing-section">
-    <div class="page-section">
-      <div class="reading-width">
-        <h2 id="how-data-is-kept-secure" class="h3">How data is kept secure</h2>
-        <hr />
-        <div class="grid-row">
-          <div class="column--one-half">
-            <p>
-              The NHS takes the responsibility for protecting your personally identifiable data very seriously. Information Governance (IG) across the NHS ensures your data is looked after in accordance with good practice and the law.
-            </p>
-            <p>
-              If an organisation can’t prove it will look after data to IG standards, their request for access will be rejected.
-            </p>
-            <p>
-              Those who have access to data must have appropriate training.
-            </p>
-          </div>
-          <div class="column--one-half">
-            <div class="" align="center">
-              <img class="image-marketing desktop" src="/images/padlock.png" width="400" alt="" />
-            </div>
-          </div>
-        </div>
-        <a role="button" class="button-wire" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">Find out more</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="marketing-section marketing-section-grey">
-    <div class="page-section">
-      <div class="reading-width">
-        <h2 id="how-data-is-kept-secure" class="h3">The benefits of data sharing</h2>
-        <hr />
-        <div class="grid-row">
-          <div class="column--one-half">
-            <p>
-              The NHS may share this personally identifiable information in two different ways. The first reason for sharing is for your own individual care. This allows healthcare professionals, like doctors and dentists, to see your important medical details.
-            </p>
-            <p>
-              The second reason for sharing is to help the NHS research, plan and improve health and social care services for you and your family.
-            </p>
-            <p>
-              This helps the NHS:
-            </p>
-            <ul>
-              <li>
-                plan essential facilities like heart units
-              </li>
-              <li>
-                understand the need for specialist care wards
-              </li>
-              <li>
-                research potential cures for life-threatening diseases
-              </li>
-              <li>
-                improve treatment for serious illnesses
-              </li>
-            </ul>
-          </div>
-          <div class="column--one-half">
-            <div class="" align="center">
-              <img class="image-marketing desktop" src="/images/research.png" width="400" alt="" />
-            </div>
-          </div>
-        </div>
-        <a role="button" class="button-wire" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Find out more</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="marketing-section">
-    <div class="page-section">
-      <div class="reading-width">
-        <h2 id="how-data-is-kept-secure" class="h3">How opting out works</h2>
-        <hr />
-        <div class="grid-row">
-          <div class="column--one-half">
-            <img class="image-marketing mobile" src="/images/stack.png" alt="" />
-            <p>
-              If you opt-out of sharing your personally identifiable data, details like your name and address will no longer appear in data shared by the NHS.
-            </p>
-            <p>
-              This will only happen if opt-outs apply to the data set being shared.
-            </p>
-            <p>
-              Once an opt-out request is received, it can take up to 21 days before it can be applied to future data releases.
-            </p>
-          </div>
-          <div class="column--one-half">
-            <div class="" align="center">
-              <img width="400" class="image-marketing desktop" src="/images/stack-list.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <a role="button" class="button-wire" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">Find out more</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="marketing-section marketing-section-grey">
-    <div class="page-section">
-      <div class="reading-width">
-
-        <h2 class="h3" id="overview">Register your preference</h2>
-        <hr />
-
-        <div class="grid-row">
-          <div class="column--one-half">
-            <p>
-              By sharing your data you can contribute to the health of future generations. However, if you don't agree with using your data for research and/or planning purposes, you can opt-out of this.
-            </p>
-            <p>
-              The decision you make will not affect your individual care.
-            </p>
-            <p>
-              <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/app/index">Start</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
 </main>
 {% endblock %}
