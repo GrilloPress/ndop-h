@@ -56,7 +56,7 @@ function submitCode() {
     // if 666 handle as error?
 
   } else {
-    window.location.href = PROTOTYPE_URL + "/journey/07-make-your-choice";
+    window.location.href = PROTOTYPE_URL + "/journey/07-opt-out-process";
   }
 
 }
