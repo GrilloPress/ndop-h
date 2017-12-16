@@ -9,13 +9,13 @@
 <main id="content" role="main">
   <div class="page-band">
     <div class="page-section">
-      <a href="/{{PROTOTYPE_URL}}/app/index">Register your preferences for sharing health data</a>
+      <a href="/{{PROTOTYPE_URL}}/journey/01-start">Register your preferences for sharing health data</a>
     </div>
   </div>
 
   <div class="page-section">
       <div class="reading-width">
-        <h1 class="page-title stepper">Register your preferences <small>NHS Number</small></h1>
+        <h1 class="page-title stepper">Finding your NHS number</h1>
           <div class="grid-row">
             <div class="column--three-quarters">
               <p>
@@ -27,8 +27,9 @@
               <p>
                 An NHS number is a 10 digit number, like 485 777 3456.
               </p>
+              <h2 class="h3">Do you have your NHS number?</h2>
               <div class="error error-summary callout callout--error error-message" role="alert" tabindex="-1">
-                <h2 class="h3" id="error-summary">Please indicate if you know your NHS number</h2>
+                <h3 class="h4" id="error-summary">Please indicate if you know your NHS number</h3>
                 <ul class="link-list" id="link-to-errors">
                 </ul>
               </div>
@@ -39,7 +40,7 @@
                     </div>
                     <input type="radio" name="finding-it-pref" id="true" value="true" class="form-label form-label--radio">
                     <label for="true" class="form-label form-label--radio multiple-choice--radio">
-                      I know my NHS number
+                      I have my NHS number
                     </label>
                     <input type="radio" name="finding-it-pref" id="false" value="false" class="multiple-choice--radio">
                     <label for="false" class="form-label form-label--radio multiple-choice--radio">
@@ -52,16 +53,6 @@
             </div>
           </div>
       </div>
-  </div>
-
-  <div class="page-section">
-    <div class="reading-width">
-      <div class="grid-row">
-        <div class="column--three-quarters">
-          {{ patterns.page_nav( "finding-it", "/" + PROTOTYPE_URL + "/journey/01-finding-it", "", "" ) }}
-        </div>
-      </div>
-    </div>
   </div>
 
 </main>

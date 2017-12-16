@@ -27,11 +27,11 @@ function matchDetails() {
 
 	//Only continues if the form is complete
 	if ((firstName == 'devil') && (formComplete == true)) {
-			window.location.href = PROTOTYPE_URL + '/app/02X-verification-fail';
+			window.location.href = PROTOTYPE_URL + '/journey/04X-no-match-found';
 		} else if ((formComplete == true) && (firstName == 'satan')) {
-			window.location.href = PROTOTYPE_URL + '/app/02X-contact-us';
+			window.location.href = PROTOTYPE_URL + '/journey/04X-contact-us';
 		} else if (formComplete == true) {
-			window.location.href= PROTOTYPE_URL + "/app/03-verification-option"
+			window.location.href= PROTOTYPE_URL + "/journey/05-verification-option"
 		}
 };
 
