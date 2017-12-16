@@ -182,6 +182,11 @@
     border: 1px solid darken( #E8EDEE, 10% );
     padding: 32px 16px;
 
+    &.first {
+
+      border-radius: 5px 5px 0 0;
+    }
+
     &.last {
 
       border-radius: 0 0 5px 5px;

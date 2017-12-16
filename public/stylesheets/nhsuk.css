@@ -1697,6 +1697,42 @@ table {
     height: 120%;
     top: -10%; }
 
+.button-wire {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: .5px;
+  line-height: 1.25;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  padding: 12px 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: #005eb8;
+  width: auto; }
+  .button-wire:before {
+    background: transparent;
+    content: "";
+    display: block;
+    height: 110%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .button-wire:hover {
+    color: #004485;
+    border-color: #004485; }
+
 .link-list__row {
   margin: 0 -16px; }
   .link-list__row:after {
@@ -3523,6 +3559,8 @@ input[type=range]:focus::-ms-fill-upper {
     margin-top: 0px;
     border: 1px solid #cbd6d8;
     padding: 32px 16px; }
+    .step-card-container .step.first {
+      border-radius: 5px 5px 0 0; }
     .step-card-container .step.last {
       border-radius: 0 0 5px 5px; }
     @media (max-width: 640px) {
