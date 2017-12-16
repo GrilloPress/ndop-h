@@ -2740,6 +2740,9 @@ p {
   .alert.alert-success {
     border: 1px solid #007f3b;
     background-color: #F5FFFA; }
+  .alert.alert-info {
+    border: 1px solid #005eb8;
+    background-color: #ebf5ff; }
 
 .form-label--inline {
   display: inline-block; }
