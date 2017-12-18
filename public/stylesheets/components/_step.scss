@@ -254,3 +254,110 @@
   }
 
 }
+
+.step-card-container-thirds {
+
+  padding: 0;
+
+  h2 {
+
+    margin: 0;
+    padding: 28px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    border-radius: 5px 5px 0 0;
+    font-size: 28px;
+
+  }
+
+  .step {
+
+    margin-top: 0px;
+    padding: 32px 16px;
+    border: 1px solid darken( #E8EDEE, 10% );
+    @extend .column--one-third;
+    @include media(desktop) {
+
+      min-height: 540px;
+
+    }
+
+    &.first {
+
+      border-radius: 5px 0 0 5px;
+      @include media(mobile) {
+
+        border-radius: 5px 5px 0 0;
+      }
+    }
+
+    &.last {
+
+      border-radius: 0 5px 5px 0;
+      @include media(mobile) {
+
+        border-radius: 0 0 5px 5px;
+      }
+    }
+
+    .column--card-step-body-with-icon {
+
+      @include media(mobile) {
+
+        // float: left;
+        // max-width: 70%;
+      }
+
+      h2, h3 {
+
+        @include media(desktop) {
+
+          margin-top: 18px;
+        }
+
+      }
+
+    }
+
+    .column--card-step-icon {
+
+      @include media(mobile) {
+
+        // float: left;
+        // max-width: 70%;
+        // padding-left: 26%;
+      }
+
+      img {
+
+        margin-top: 32px;
+      }
+
+    }
+
+    .column--card-step-counter {
+
+      @include media(mobile) {
+
+        // float: left;
+        // max-width: 24%;
+      }
+
+      div {
+
+        background: $nhs-blue;
+        color: #ffffff;
+        font-size: 32px;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        margin: auto;
+
+      }
+
+    }
+
+  }
+
+}
