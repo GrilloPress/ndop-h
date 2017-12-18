@@ -3630,7 +3630,8 @@ input[type=range]:focus::-ms-fill-upper {
           border-radius: 0 0 5px 5px; } }
     @media (min-width: 925px) {
       .step-card-container-thirds .step .column--card-step-body-with-icon h2, .step-card-container-thirds .step .column--card-step-body-with-icon h3 {
-        margin-top: 18px; } }
+        margin-top: 18px;
+        font-size: 20px; } }
     .step-card-container-thirds .step .column--card-step-icon img {
       margin-top: 32px; }
     .step-card-container-thirds .step .column--card-step-counter div {
