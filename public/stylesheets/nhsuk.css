@@ -477,6 +477,14 @@ body {
     .local-header .grid-row > * {
       margin-top: 0; } }
 
+.column--full {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--full {
+      float: left;
+      width: 100%; } }
+
 .column--one-quarter {
   display: block;
   padding: 0 16px; }
@@ -3604,7 +3612,8 @@ input[type=range]:focus::-ms-fill-upper {
       margin: auto; }
 
 .step-card-container-thirds {
-  padding: 0; }
+  padding: 0;
+  margin: 0 16px; }
   .step-card-container-thirds h2 {
     margin: 0;
     padding: 28px;
@@ -3617,7 +3626,7 @@ input[type=range]:focus::-ms-fill-upper {
     border: 1px solid #cbd6d8; }
     @media (min-width: 925px) {
       .step-card-container-thirds .step {
-        min-height: 540px; } }
+        min-height: 700px; } }
     .step-card-container-thirds .step.first {
       border-radius: 5px 0 0 5px; }
       @media (max-width: 640px) {
@@ -3628,10 +3637,22 @@ input[type=range]:focus::-ms-fill-upper {
       @media (max-width: 640px) {
         .step-card-container-thirds .step.last {
           border-radius: 0 0 5px 5px; } }
-    @media (min-width: 925px) {
-      .step-card-container-thirds .step .column--card-step-body-with-icon h2, .step-card-container-thirds .step .column--card-step-body-with-icon h3 {
-        margin-top: 18px;
-        font-size: 20px; } }
+    @media (max-width: 640px) {
+      .step-card-container-thirds .step img {
+        display: block;
+        margin: auto; } }
+    .step-card-container-thirds .step .column--card-step-body-with-icon h2, .step-card-container-thirds .step .column--card-step-body-with-icon h3 {
+      text-align: center; }
+      @media (min-width: 925px) {
+        .step-card-container-thirds .step .column--card-step-body-with-icon h2, .step-card-container-thirds .step .column--card-step-body-with-icon h3 {
+          margin-top: 18px;
+          font-size: 20px; } }
+    .step-card-container-thirds .step .column--card-step-body-with-icon .next-icon-right {
+      display: none; }
+      @media (min-width: 925px) {
+        .step-card-container-thirds .step .column--card-step-body-with-icon .next-icon-right {
+          margin-top: 3em;
+          display: block; } }
     .step-card-container-thirds .step .column--card-step-icon img {
       margin-top: 32px; }
     .step-card-container-thirds .step .column--card-step-counter div {

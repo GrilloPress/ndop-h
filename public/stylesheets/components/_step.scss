@@ -258,6 +258,7 @@
 .step-card-container-thirds {
 
   padding: 0;
+  margin: 0 16px;
 
   h2 {
 
@@ -277,7 +278,7 @@
     @extend .column--one-third;
     @include media(desktop) {
 
-      min-height: 540px;
+      min-height: 700px;
 
     }
 
@@ -299,6 +300,16 @@
       }
     }
 
+    img {
+
+      @include media(mobile) {
+
+        display: block;
+        margin: auto;
+      }
+
+    }
+
     .column--card-step-body-with-icon {
 
       @include media(mobile) {
@@ -309,10 +320,24 @@
 
       h2, h3 {
 
+        text-align: center;
+
         @include media(desktop) {
 
           margin-top: 18px;
           font-size: 20px;
+        }
+
+      }
+
+      .next-icon-right {
+
+        display: none;
+
+        @include media(desktop) {
+
+          margin-top: 3em;
+          display: block;
         }
 
       }

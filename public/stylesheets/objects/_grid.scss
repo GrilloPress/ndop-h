@@ -20,6 +20,10 @@
 
 // Use .grid-column to create a grid column with 15px gutter
 // By default grid columns break to become full width at 925px
+.column--full {
+  @include grid-column(1 / 1);
+}
+
 .column--one-quarter {
   @include grid-column(1 / 4);
 }
