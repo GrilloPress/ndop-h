@@ -1,6 +1,7 @@
-{% set title = 'Contact us' %}
+{% set title = 'Thank you' %}
 {% set PROTOTYPE_URL = 'aire' %}
 {% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/10-thank-you.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 
@@ -15,29 +16,25 @@
   <div class="page-section">
       <div class="reading-width">
         <h1 class="page-title">{{title}}</h1>
+
           <div class="grid-row">
             <div class="column--three-quarters">
-              <p>Sorry, we seem to have the wrong contact details for you.</p>
-
-              <p>This may be because you have not registered these details with or they have not yet been shared with us.</p>
-              <h2 class="h3">Other ways to set your preferences</h2>
+              <p class="alert alert-success" role="alert" style="display:none;" tabindex="-1">Your preferences have been saved.</p>
               <p>
-                Contact the NHS Digital Contact Centre to verify your identity and discuss your data sharing preferences.
+                It can take up to 21 days before your decision can be applied to future data releases leaving the NHS. Your preferences will be applied gradually across all organisations that use patient health information.
               </p>
               <p>
-                Call: 0300 303 5678
+                Your preferences will be acknowledged by <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">other organisations that use health and social care information by March 2020</a>.
               </p>
               <p>
-                Open: 9am to 5pm Monday to Friday (excluding bank holidays).
+                You can reset your preferences at any time in the future using this service.
               </p>
               <p>
                 <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/journey/index">Return to start &olarr;</a>
               </p>
             </div>
-            </div>
           </div>
       </div>
   </div>
-
 </main>
 {% endblock %}
