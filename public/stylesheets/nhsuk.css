@@ -557,6 +557,14 @@ body {
       float: right;
       width: 75%; } }
 
+.column--one-fifth-right {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-fifth-right {
+      float: right;
+      width: 20%; } }
+
 .column--one-fifth, .step-card-container .step .column--card-step-icon {
   display: block;
   padding: 0 16px; }
