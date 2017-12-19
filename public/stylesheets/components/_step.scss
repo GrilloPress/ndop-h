@@ -317,12 +317,6 @@
 
     .column--card-step-body-with-icon {
 
-      @include media(mobile) {
-
-        // float: left;
-        // max-width: 70%;
-      }
-
       h2, h3 {
 
         text-align: center;
@@ -331,18 +325,6 @@
 
           margin-top: 18px;
           font-size: 20px;
-        }
-
-      }
-
-      .next-icon-right {
-
-        display: none;
-
-        @include media(desktop) {
-
-          margin-top: 3em;
-          display: block;
         }
 
       }

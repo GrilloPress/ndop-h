@@ -3651,12 +3651,6 @@ input[type=range]:focus::-ms-fill-upper {
         .step-card-container-thirds .step .column--card-step-body-with-icon h2, .step-card-container-thirds .step .column--card-step-body-with-icon h3 {
           margin-top: 18px;
           font-size: 20px; } }
-    .step-card-container-thirds .step .column--card-step-body-with-icon .next-icon-right {
-      display: none; }
-      @media (min-width: 925px) {
-        .step-card-container-thirds .step .column--card-step-body-with-icon .next-icon-right {
-          margin-top: 3em;
-          display: block; } }
     .step-card-container-thirds .step .column--card-step-icon img {
       margin-top: 32px; }
     .step-card-container-thirds .step .column--card-step-counter div {
