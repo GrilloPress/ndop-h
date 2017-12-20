@@ -15,30 +15,31 @@
   </div>
 
   <div class="page-section">
-      <div class="reading-width">
-        <h1 class="page-title">{{title}}</h1>
+    <div class="reading-width">
+      <h1 class="page-title">{{title}}</h1>
 
-          <div class="grid-row">
-            <div class="column--three-quarters">
-              <div class="reading-width">
-                <p>
-                  For security reasons we must verify who you are before you can set your preferences.
-                </p>
-                <p>
-                  To do this you must complete the following verification steps
-                </p>
-              </div>
-            </div>
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          <div class="reading-width">
+            <p>For security reasons we must verify who you are before you can set your preferences.</p>
+            <p>
+              To do this you must complete the following three verification steps.
+            </p>
           </div>
+        </div>
       </div>
+    </div>
   </div>
 
-  <div class="step-container step-card-container-thirds">
+  <div class="step-container step-card-container">
     <div class="page-section">
-          <div class="grid-row shadow">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
 
-            <div id="step-enter-your-details 1" class="step first">
-              <div class="">
+            <h2>Verification steps</h2>
+            <div id="step-enter-your-details" class="step">
+              <div class="grid-row">
                 <div class="column--card-step-counter">
                   <div>
                     1
@@ -46,22 +47,22 @@
                 </div>
                 <div class="column--card-step-body-with-icon">
                   <h3>Enter your details</h3>
-                  <div class="grid-row">
-                    <div class="column--full">
-                      <img class="marketing-icon" alt="check your details icon" src="/images/search_for_your_details.png">
-                    </div>
-                  </div>
                   <p>
                     You enter your details so that we can look for your contact information in our patient database.
                   </p>
                   <p>
                     The information you provide will not be saved.
                   </p>
+
+                </div>
+                <div class="column--card-step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
                 </div>
               </div>
             </div>
+
             <div id="step-choose-your-contact-method" class="step">
-              <div class="">
+              <div class="grid-row">
                 <div class="column--card-step-counter">
                   <div>
                     2
@@ -69,11 +70,6 @@
                 </div>
                 <div class="column--card-step-body-with-icon">
                   <h3>Choose your contact method</h3>
-                  <div class="grid-row">
-                    <div class="column--full">
-                      <img class="marketing-icon" alt="check your details icon" src="/images/text_with_code.png">
-                    </div>
-                  </div>
                   <p>
                     Using the details we hold in our database, we will send you a one-time verification code to your selected contact method.
                   </p>
@@ -82,10 +78,14 @@
                   </p>
 
                 </div>
+                <div class="column--card-step-icon">
+                  <img class="marketing-icon" alt="Phone getting an SMS message" src="/images/verification-method-icon.png">
+                </div>
               </div>
             </div>
+
             <div id="step-enter-your-security-code" class="step last">
-              <div class="">
+              <div class="grid-row">
                 <div class="column--card-step-counter">
                   <div>
                     3
@@ -93,38 +93,43 @@
                 </div>
                 <div class="column--card-step-body-with-icon">
                   <h3>Enter your security code</h3>
-                  <div class="grid-row">
-                    <div class="column--full">
-                      <img class="marketing-icon" src="/images/padlock_small.png" alt="how your data is kept secure icon">
-                    </div>
-                  </div>
                   <p>
-                    You will then need to enter your code verification code into our system.
+                    Once you have chosen your contact method, you will be sent a code which will give you access to set your preference.
                   </p>
                   <p>
                     When you enter your code you will then be able to set your preference online.
                   </p>
+
+                </div>
+                <div class="column--card-step-icon">
+                  <img class="marketing-icon" src="/images/lock-icon.png" alt="how your data is kept secure icon">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-  <div class="page-section">
-      <div class="reading-width">
-        <div class="grid-row">
-          <div class="column--three-quarters">
+
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--three-quarters">
+          <div class="reading-width">
+            <h2>Start verification process</h2>
             <p>
               By continuing you agree to let us search for your details in our database to send you a one-time security passcode.
             </p>
             <p>
-              <a href="/{{PROTOTYPE_URL}}/journey/02-your-details" class="button" role="button">Agree and continue</a>
+              <a href="/{{PROTOTYPE_URL}}/app/02-your-details" role="button" class="button">Accept and continue</a>
             </p>
           </div>
         </div>
       </div>
     </div>
+
+
 
 </main>
 {% endblock %}
