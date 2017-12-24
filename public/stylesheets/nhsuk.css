@@ -3664,6 +3664,44 @@ input[type=range]:focus::-ms-fill-upper {
       text-align: center;
       margin: auto; }
 
+.details-group {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 14px 3px #ebebeb;
+  -moz-box-shadow: 0px 0px 14px 3px #ebebeb;
+  box-shadow: 0px 0px 14px 3px #ebebeb;
+  border: 1px solid #cbd6d8; }
+  .details-group .details-title {
+    border-bottom: 2px solid #cbd6d8;
+    padding: 1em;
+    margin-top: 0; }
+    .details-group .details-title h2, .details-group .details-title h3 {
+      font-family: "Frutiger W01", Arial, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      text-transform: none; }
+      @media (min-width: 641px) {
+        .details-group .details-title h2, .details-group .details-title h3 {
+          font-size: 24px;
+          line-height: 32px; } }
+      @media (min-width: 925px) {
+        .details-group .details-title h2, .details-group .details-title h3 {
+          font-size: 24px;
+          line-height: 32px; } }
+  .details-group details {
+    border-bottom: 1px solid #cbd6d8;
+    padding: 1em;
+    margin-top: 0;
+    width: 100%; }
+    .details-group details:hover {
+      background-color: #f4f4f4; }
+  .details-group details[open]:hover {
+    background-color: transparent; }
+  .details-group summary {
+    width: 100%; }
+    .details-group summary .details__summary {
+      text-decoration: none; }
+
 .local-header__subtitle {
   color: white;
   margin-top: 5px; }
