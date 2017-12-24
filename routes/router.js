@@ -65,4 +65,31 @@ router.get('/aire/:subdir/:subdir2/:view', function(req, res, next) {
 });
 // // // // // // //
 
+// GET v1 index page.
+router.get('/spen', function(req, res, next) {
+  res.render( 'aire/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/spen/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'spen/' + theView );
+});
+
+router.get('/spen/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'spen/' + theDir + '/' + theView );
+});
+
+router.get('/spen/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'spen/' + theDir + '/' + theDir2 + '/' + theView );
+});
+// // // // // // //
+
 module.exports = router;

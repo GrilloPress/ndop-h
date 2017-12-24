@@ -1,0 +1,39 @@
+{% set title = 'Prototype Spen' %}
+{% set PROTOTYPE_URL = 'spen' %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="list--breadcrumb">
+      <li><a href="/">Index</a></li>
+      <li>{{title}}</li>
+    </ol>
+  </nav>
+
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <div class="reading-width">
+          <p>December 2017 - January 2018</p>
+        </div>
+      </div>
+    </div>
+
+    <p>This Prototype was created in response to user feedback in Lab 6 and UserZoom testing on Prototype F and Production</p>
+
+    <p>
+      It provides users with an extended screener before verification as well as an FAQ page before the set your preference page.
+    </p>
+
+    <a role="button" class="button" href="/{{PROTOTYPE_URL}}/A01-opt-out-process">Start Prototype A</a>
+    <hr>
+    <h2 id="prototype-sections">Prototype sections</h2>
+
+    tbc
+
+    </div>
+</main>
+{% endblock %}
