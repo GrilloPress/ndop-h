@@ -1,6 +1,13 @@
 var PROTOTYPE_URL = "/spen";
 
 $(window).ready(function() {
+
+  if (sessionStorage.singlePref == "true" ) {
+    $(" #preference ").text( "share");
+  } else {
+    $(" #preference ").text( "not share");
+  }
+
   $( ".alert" ).fadeIn( 1000, function() {
   // Animation complete
   });
