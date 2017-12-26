@@ -3690,7 +3690,6 @@ input[type=range]:focus::-ms-fill-upper {
           line-height: 32px; } }
   .details-group details {
     border-bottom: 1px solid #cbd6d8;
-    padding: 1em;
     margin-top: 0;
     width: 100%; }
     .details-group details:hover {
@@ -3698,9 +3697,13 @@ input[type=range]:focus::-ms-fill-upper {
   .details-group details[open]:hover {
     background-color: transparent; }
   .details-group summary {
-    width: 100%; }
+    width: 100%;
+    padding: 16px; }
     .details-group summary .details__summary {
       text-decoration: none; }
+  .details-group .details__content {
+    padding: 32px 16px;
+    margin-top: 0; }
 
 .local-header__subtitle {
   color: white;
