@@ -34,7 +34,7 @@ function resendCode() {
     $( "#resend-notice" ).hide().fadeIn( "slow", function() {
     });
 
-    $( "#resend-code" ).replaceWith( "<a href='" + PROTOTYPE_URL + "/journey/04X-contact-us'>Contact us</a>" );
+    $( "#resend-code" ).replaceWith( "<a href='" + PROTOTYPE_URL + "/journey/06X-contact-us'>Contact us</a>" );
     $('html,body').animate({scrollTop: $('.alert').offset().top -100});
     $('.alert' ).focus();
   }
