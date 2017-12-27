@@ -67,7 +67,7 @@ router.get('/aire/:subdir/:subdir2/:view', function(req, res, next) {
 
 // GET v1 index page.
 router.get('/spen', function(req, res, next) {
-  res.render( 'aire/index' );
+  res.render( 'spen/index' );
 });
 
 // GET all v1 URL reqs and push them to a template in the v1 file
