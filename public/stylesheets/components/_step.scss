@@ -55,6 +55,13 @@
     background-color: #E8EDEE;
   }
 
+  &.blue {
+
+    background-color: #f0f8ff;
+    border-top: 1px solid darken( #f0f8ff, 7% );
+    border-bottom: 1px solid darken( #f0f8ff, 5% );
+  }
+
   h2 {
 
     margin: 0.5em 0 1.5em 0;

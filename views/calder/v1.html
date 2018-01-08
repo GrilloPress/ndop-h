@@ -6,7 +6,7 @@
 {% extends 'layouts/layout.html' %}
 
 {% block body %}
-<main id="content" role="main">
+<main id="content" role="main v1">
   <div class="page-band">
     <div class="page-section">
       <a href="/{{PROTOTYPE_URL}}/app/index">Register your preference for sharing health data</a>
@@ -15,16 +15,118 @@
 
   <div class="page-section">
       <div class="reading-width">
-        <h1 class="page-title">Register your preferences</h1>
+        <h1 class="page-title">Register your preference</h1>
           <div class="grid-row">
             <div class="column--three-quarters">
               <p>
                 Use this service to manage your preferences for sharing your patient health information.
               </p>
               <p>
-                You must have an email address or phone number registered with an NHS service to continue online. <a href="/{{PROTOTYPE_URL}}/app/00-other-ways-to-set-your-preferences">Other ways to set your preferences instead</a>.
+              If you opt-out of sharing your personally identifiable data, details like your name and address will no longer appear in data shared by the NHS. This will only happen if opt-outs apply to the data set being shared.
+            </p>
+            <h2>How the service works</h2>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="step-container blue">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
+            <div id="step-enter-your-details" class="step">
+              <div class="grid-row">
+                <div class="column--step-counter">
+                  <div>
+                    1
+                  </div>
+                </div>
+                <div class="column--step-body-with-icon">
+                  <h3>Check your details</h3>
+                  <p>
+                    You enter your details and we look for your contact information in our patient database.
+                  </p>
+
+                </div>
+                <div class="column--step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-container">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
+            <div id="step-choose-your-contact-method" class="step">
+              <div class="grid-row">
+                <div class="column--step-counter">
+                  <div>
+                    2
+                  </div>
+                </div>
+                <div class="column--step-body-with-icon">
+                  <h3>Confirm your identity</h3>
+                  <p>
+                    We send a verification code to your selected contact method and you enter this online.
+                  </p>
+                </div>
+                <div class="column--step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/verification-method-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-container blue">
+    <div class="page-section">
+      <div class="grid-row">
+        <div class="column--four-fifths">
+          <div class="reading-width">
+            <div id="step-enter-your-security-code" class="step">
+              <div class="grid-row">
+                <div class="column--step-counter">
+                  <div>
+                    3
+                  </div>
+                </div>
+                <div class="column--step-body-with-icon">
+                  <h3>Set your preference</h3>
+                  <p>
+                    You confirm your data sharing preference, which will be applied within 21 days.
+                  </p>
+
+                </div>
+                <div class="column--step-icon">
+                  <img class="marketing-icon" alt="check your details icon" src="/images/choice-icon.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <h2>Before you start</h2>
+              <p>
+                You must have an email address or phone number registered with an NHS service to continue online. <a href="/H/app/00-other-ways-to-set-your-preferences">Other ways to set your preferences instead</a>.
               </p>
-              <h2 class="h3">Before you start</h2>
               <p>To continue you will need:</p>
               <ul>
                 <li>access to your email or mobile phone</li>
@@ -53,126 +155,8 @@
               <p><a role="button" class="button" title="Continue Opt-out Process" href="/{{PROTOTYPE_URL}}/app/01-confirm-who-you-are">Start</a></p>
             </div>
           </div>
-      </div>
-  </div>
-
-  <div class="step-container grey">
-    <div class="page-section">
-      <div class="grid-row">
-        <div class="column--three-quarters">
-          <div class="reading-width">
-
-            <h2>Verification steps</h2>
-            <div id="step-enter-your-details" class="step">
-              <div class="grid-row">
-                <div class="column--step-counter">
-                  <div>
-                    1
-                  </div>
-                </div>
-                <div class="column--step-body-with-icon">
-                  <h3>Enter your details</h3>
-                  <p>
-                    You enter your details so that we can look for your contact information in our patient database.
-                  </p>
-                  <p>
-                    To confirm we have the correct contact details for you, you will need to provide your:
-                  </p>
-                  <ul>
-                    <li>
-                      name
-                    </li>
-                    <li>
-                      postcode
-                    </li>
-                    <li>
-                      date of birth
-                    </li>
-                    <li>
-                      NHS number
-                    </li>
-                  </ul>
-                  <p>
-                    The information you provide will not be saved.
-                  </p>
-
-                </div>
-                <div class="column--step-icon">
-                  <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="step-container">
-    <div class="page-section">
-      <div class="grid-row">
-        <div class="column--three-quarters">
-          <div class="reading-width">
-            <div id="step-choose-your-contact-method" class="step">
-              <div class="grid-row">
-                <div class="column--step-counter">
-                  <div>
-                    2
-                  </div>
-                </div>
-                <div class="column--step-body-with-icon">
-                  <h3>Choose your contact method</h3>
-                  <p>
-                    Using the details we hold in our database, we will send you a one-time verification code to your selected contact method.
-                  </p>
-                  <p>
-                    This will be a mobile number or an email.
-                  </p>
-
-                </div>
-                <div class="column--step-icon">
-                  <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="step-container grey">
-    <div class="page-section">
-      <div class="grid-row">
-        <div class="column--three-quarters">
-          <div class="reading-width">
-            <div id="step-enter-your-security-code" class="step">
-              <div class="grid-row">
-                <div class="column--step-counter">
-                  <div>
-                    3
-                  </div>
-                </div>
-                <div class="column--step-body-with-icon">
-                  <h3>Enter your security code</h3>
-                  <p>
-                    Once you have chosen your contact method, you will be sent a code which will give you access to set your preference.
-                  </p>
-                  <p>
-                    When you enter your code you will then be able to set your preference online.
-                  </p>
-
-                </div>
-                <div class="column--step-icon">
-                  <img class="marketing-icon" alt="check your details icon" src="/images/verify-icon.png">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="page-section">
     <div class="reading-width">
