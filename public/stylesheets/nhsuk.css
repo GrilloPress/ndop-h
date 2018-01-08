@@ -3518,8 +3518,8 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: #E8EDEE; }
   .step-container.blue {
     background-color: #f0f8ff;
-    border-top: 1px solid #cce7ff;
-    border-bottom: 1px solid #d7ecff; }
+    border-top: 1px solid #d7ecff;
+    border-bottom: 1px solid #dceeff; }
   .step-container h2 {
     margin: 0.5em 0 1.5em 0; }
   .step-container .shadow {
