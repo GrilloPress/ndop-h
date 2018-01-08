@@ -1,8 +1,7 @@
-{% set title = 'Confirm who you are' %}
+{% set title = 'Register your preferences for sharing patient health data' %}
 {% set PROTOTYPE_URL = 'calder' %}
 {% block scripts %}
-<script src="/javascripts/radio-checkbox.js"></script>
-<script src="/javascripts/{{PROTOTYPE_URL}}/01-confirm-who-you-are.js"></script>
+<script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
 {% endblock %}
 {% extends 'layouts/layout.html' %}
 
@@ -15,20 +14,46 @@
   </div>
 
   <div class="page-section">
-    <div class="reading-width">
-      <h1 class="page-title">{{title}}</h1>
+      <div class="reading-width">
+        <h1 class="page-title">Register your preferences</h1>
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              <p>
+                Use this service to manage your preferences for sharing your patient health information.
+              </p>
+              <p>
+                You must have an email address or phone number registered with an NHS service to continue online. <a href="/{{PROTOTYPE_URL}}/app/00-other-ways-to-set-your-preferences">Other ways to set your preferences instead</a>.
+              </p>
+              <h2 class="h3">Before you start</h2>
+              <p>To continue you will need:</p>
+              <ul>
+                <li>access to your email or mobile phone</li>
+                <li>your NHS number</li>
+              </ul>
 
-      <div class="grid-row">
-        <div class="column--three-quarters">
-          <div class="reading-width">
-            <p>For security reasons we must verify who you are before you can set your preferences.</p>
-            <p>
-              To do this you must complete the following three verification steps.
-            </p>
+              <details class="" role="group">
+                <summary role="button" aria-controls="details-content-0" aria-expanded="false">
+                  <span class="details__summary">Where can I find my NHS number?</span>
+                </summary>
+                <div class="details__content" id="details-content-0" aria-hidden="true">
+                  <div class="reading-width">
+                    <p>You can find your NHS number on any document sent to you by the NHS. This may include:</p>
+                    <ul>
+                      <li>prescriptions</li>
+                      <li>test results</li>
+                      <li>hospital referral letters</li>
+                      <li>appointment letters</li>
+                      <li>your NHS medical card</li>
+                    </ul>
+                    <p>Ask your GP for help if you can't find your NHS number</p>
+                  </div>
+                </div>
+              </details>
+
+              <p><a role="button" class="button" title="Continue Opt-out Process" href="/{{PROTOTYPE_URL}}/app/01-confirm-who-you-are">Start</a></p>
+            </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
 
   <div class="step-container grey">
@@ -149,24 +174,15 @@
     </div>
   </div>
 
-<div class="step-container">
-    <div class="page-section">
+  <div class="page-section">
+    <div class="reading-width">
       <div class="grid-row">
         <div class="column--three-quarters">
-          <div class="reading-width">
-            <h2>Start verification process</h2>
-            <p>
-              By continuing you agree to let us search for your details in our database to send you a one-time security passcode.
-            </p>
-            <p>
-              <a href="/{{PROTOTYPE_URL}}/app/02-your-details" role="button" class="button">Accept and continue</a>
-            </p>
-          </div>
+          {{ patterns.page_nav( "Overview", "/" + PROTOTYPE_URL + "/01-overview", "", "" ) }}
         </div>
       </div>
     </div>
   </div>
-
 
 </main>
 {% endblock %}
