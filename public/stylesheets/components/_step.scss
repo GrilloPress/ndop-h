@@ -62,6 +62,11 @@
     border-bottom: 1px solid darken( #f0f8ff, 4% );
   }
 
+  &.no-margin {
+
+    margin-top: 0;
+  }
+
   h2 {
 
     margin: 0.5em 0 1.5em 0;
@@ -223,6 +228,37 @@
 
       }
       @extend .column--three-fifths;
+    }
+
+    .column--card-step-body {
+
+      @extend .column--four-fifths;
+
+      @include media(mobile) {
+
+        float: left;
+        max-width: 75%;
+      }
+
+      h2, h3 {
+
+        @include media(desktop) {
+
+          margin-top: 18px;
+        }
+
+      }
+
+      &.action {
+
+        @include media(desktop) {
+
+          margin-left: 16.66%;
+        }
+
+      }
+
+
     }
 
     .column--card-step-icon {
