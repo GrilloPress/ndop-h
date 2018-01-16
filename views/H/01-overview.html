@@ -1,11 +1,4 @@
-{% set title = 'Overview - Register your preference for sharing health data' %}
-{% set content_title = "Overview" %}
-{% set PROTOTYPE_URL = 'H' %}
-{% block scripts %}
-{% endblock %}
-{% extends 'layouts/layout.html' %}
-
-{% block body %}
+{% set title = 'Overview - Register your preference for sharing health data' %} {% set content_title = "Overview" %} {% set PROTOTYPE_URL = 'H' %} {% block scripts %} {% endblock %} {% extends 'layouts/layout.html' %} {% block body %}
 <main id="content" role="main">
   <div class="page-band">
     <div class="page-section">
@@ -56,31 +49,35 @@
             The NHS may use your personally identifiable data in two different ways.
           </p>
 
-          <div class="panel">
-            <div class="panel__content panel__content--half">
-              <div class="reading-width">
-                <h3 class="h4">Your individual care</h3>
-                <p>Health and care professionals access your data to see your important health and care information.</p>
-                <p>This may include any:</p>
-                <ul>
-                  <li>current medical conditions</li>
-                  <li>past procedures</li>
-                  <li>dietary or allergy requirements</li>
-                </ul>
-              </div>
+
+          <h2 class="h3">Your individual care</h2>
+          <div class="grid-row">
+            <div class="column--one-third">
+              <img class="data-usage-icon" src="/images/individual_care_icon.png" height="150" width="auto" />
             </div>
-            <div class="panel__content panel__content--half">
-              <div class="reading-width">
-                <h3 class="h4">Research and planning</h3>
-                <p>Your data is also used to improve the health of future generations.</p>
-                <p>The NHS uses data to:</p>
-                <ul>
-                  <li>plan essential facilities like heart units</li>
-                  <li>understand the need for specialist care wards</li>
-                  <li>research potential cures for life-threatening diseases</li>
-                  <li>improve treatment for serious illnesses</li>
-                </ul>
-              </div>
+            <div class="column--two-thirds">
+              <p>Health and care professionals access your data to see your important health and care information. This may include:</p>
+              <ul>
+                <li>current medical conditions</li>
+                <li>past procedures</li>
+                <li>dietary or allergy requirements</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="h3">Research and planning</h2>
+          <div class="grid-row">
+            <div class="column--one-third">
+              <img class="data-usage-icon" src="/images/research_icon.png" height="150" width="auto" />
+            </div>
+            <div class="column--two-thirds">
+              <p>Your data is also used to improve the health of future generations. The NHS uses data to:</p>
+              <ul>
+                <li>plan essential facilities like heart units</li>
+                <li>understand the need for specialist care wards</li>
+                <li>research potential cures for life-threatening diseases</li>
+                <li>improve treatment for serious illnesses</li>
+              </ul>
             </div>
           </div>
 

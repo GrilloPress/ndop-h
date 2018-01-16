@@ -3406,6 +3406,12 @@ input[type=range]:focus::-ms-fill-upper {
 .process-three {
   color: #003087; }
 
+.data-usage-icon {
+  height: 150px;
+  width: auto;
+  display: block;
+  margin: 0 auto; }
+
 .page-band {
   background-color: #005eb8;
   color: white;
