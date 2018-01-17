@@ -3431,7 +3431,7 @@ input[type=range]:focus::-ms-fill-upper {
 .data-usage-icon {
   height: 150px;
   width: auto;
-  display: block;
+  display: inline-block;
   margin: 0 auto; }
 
 .page-band {
