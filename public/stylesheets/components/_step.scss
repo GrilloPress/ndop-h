@@ -87,10 +87,12 @@
 
     @extend .column--one-sixth;
 
-    @include media(mobile) {
+    &.offset {
 
-      float: left;
-      max-width: 24%;
+      @include media(desktop) {
+
+        margin-left: -16%;
+      }
     }
 
     div {
@@ -106,6 +108,8 @@
       margin: auto;
 
     }
+
+
   }
 
   .column--step-body {
@@ -116,6 +120,12 @@
 
       float: left;
       max-width: 75%;
+    }
+
+    @include media(tablet) {
+
+      float: left;
+      max-width: 80%;
     }
 
     h2, h3 {
@@ -149,6 +159,12 @@
       max-width: 70%;
     }
 
+    @include media(tablet) {
+
+      float: left;
+      max-width: 80%;
+    }
+
     h2, h3 {
 
       @include media(desktop) {
@@ -167,8 +183,15 @@
     @include media(mobile) {
 
       float: left;
-      max-width: 70%;
-      padding-left: 26%;
+      max-width: 30%;
+
+    }
+
+    @include media(tablet) {
+
+      float: left;
+      max-width: 20%;
+
     }
 
     img {
