@@ -3686,7 +3686,7 @@ input[type=range]:focus::-ms-fill-upper {
     border: 1px solid #cbd6d8; }
     @media (min-width: 925px) {
       .step-card-container-thirds .step {
-        min-height: 740px; } }
+        min-height: 760px; } }
     .step-card-container-thirds .step.first {
       border-radius: 5px 0 0 5px; }
       @media (max-width: 640px) {
